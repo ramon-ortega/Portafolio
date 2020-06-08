@@ -26,6 +26,17 @@ body {
     margin: 0;
 }
 
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portada{
+    margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -45,6 +56,8 @@ h1{
     /* text-decoration: underline; */
     height: 300px;
     color: white;
+    margin: 0;
+    padding: 25px;
     /* margin: top right bottom left aqui agregamos las cantidades de los margenes o margin: 10px 10px donde el primer valor
     corresponde a top y bottom y los otros valores a left y right */
 }
@@ -56,6 +69,8 @@ h1{
 .portfolio{
     background: #c1c1c1;
 }
+
+
 
 .project{
 /*     tamaño / tipo / estilo */
@@ -93,7 +108,17 @@ h1{
 
 .header{
     background-color: #233347;
-    color: white
+    color: white;
+    display : flex ;
+    justify-content: space-between;
+    height: 150px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu {/* menu hereda de .header */
+    height: inherit;
 }
 
 .hero{
@@ -102,11 +127,25 @@ h1{
     background-size: 400px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    align-items: center;
 }
 
-.header a{
+.header ol{/* header ol hereda de menu */
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {/* header ol li hereda de header ol */
+    height: inherit;
+}
+
+.header a{/* header a hereda de .header ol li */
     color:white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 h1 strong{
@@ -121,21 +160,105 @@ h1 strong{
     width: 500px;
 }
 
-.flexbox{
+/* .flexbox{
     display: flex;
 /*     flex-direction: column; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     flex-direction: column;
     justify-content: center ; /* horizontal */
-    align-content: center; /* vertical */
+    /* align-content: center; */  /* vertical */
     /* flex-direction: column; */
-}
+/*} */
 
-.box{
+/* .box{
     width: 50px;
     height: 50px;
     border: 3px solid red;
 
     flex-shrink: 0;
     margin: 5px;
+} */
+
+.footer{
+    background-color: #233347 ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact {
+    background-color: #33DAFC;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+  }
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+}
+
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+}
+
+.social-link.github{
+    background-image: url('../images/github.svg');
+}
+
+.contact h3{
+    font-size: 30px;
+    margin:0;
+    
+}
+
+.contact-suscription-email{
+    border-radius: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 8px 0px 8px 35px;
+    background-image: url('../images/envelope.svg');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.contact-button{
+    display: block;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+    background-color: #33DAFC;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

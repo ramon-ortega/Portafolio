@@ -49,7 +49,7 @@ h6{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1.5;
     letter-spacing: 1px;
     /* text-transform: uppercase; */
@@ -57,7 +57,7 @@ h1{
     height: 300px;
     color: white;
     margin: 0;
-    padding: 25px;
+    /* padding: 25px; */
     /* margin: top right bottom left aqui agregamos las cantidades de los margenes o margin: 10px 10px donde el primer valor
     corresponde a top y bottom y los otros valores a left y right */
 }
@@ -113,7 +113,6 @@ h1{
     justify-content: space-between;
     height: 150px;
     display: flex;
-    padding: 20px;
     align-items: center;
 }
 
@@ -122,12 +121,24 @@ h1{
 }
 
 .hero{
+    height: 300;
     background-color: #233347;
-    background-image: url('../images/ramon.jpg');
-    background-size: 400px 300px;
+    /* background-image: url('../images/ramon.jpg'); */
+    /* background-size: 400px 300px;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: right; */
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.image-heroContainer{
+    margin:0
+}
+
+.hero-image{
+    object-fit: cover;
+    margin: 0;
 }
 
 .header ol{/* header ol hereda de menu */
@@ -152,13 +163,62 @@ h1 strong{
     color: yellowgreen;
 }
 
-.curriculum{
+.experience{
+    background-color: #c1c1c1;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.experience-title{
+    background-color: #c1c1c1;
+    color: rgb(197, 0, 92);
+    padding: 20px;
+    margin: 0em;
+}
+
+.curriculum{
+    margin: 9px;
+    border: 1px solid gray;
+    background-color: rgb(137, 167, 212);
+    flex-shrink: 0;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.curriculum-imageContainer{
+    margin: 0px;
 }
 
 .curriculum-details{
-    width: 500px;
+    margin:20px;
+    width: 380px;
+    padding: 28px;
+    margin-top: -60px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    position: relative;
 }
+
+.curriculum-image{
+    width: 480px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.curriculum-description{
+    text-align: left;
+}
+
+.curriculum-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
 /* .flexbox{
     display: flex;
@@ -185,7 +245,7 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    height: 100px;
 }
 
 .footer img{
@@ -204,7 +264,6 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 40px;
 }
 
 .social-link {
@@ -261,4 +320,29 @@ h1 strong{
     height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.container{
+/*     border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+
+.portfolio-title{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+    height: 50px;
+}
+
+.container-h2{
+    margin-top: -10px;
+    padding-left: 170px;
+    background-color: #c1c1c1;
 }

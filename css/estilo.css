@@ -171,6 +171,7 @@ h1 strong{
 
 .experience-title{
     background-color: #c1c1c1;
+    font-size: 30px;
     color: rgb(197, 0, 92);
     padding: 20px;
     margin: 0em;
@@ -335,6 +336,8 @@ h1 strong{
 
 
 .portfolio-title{
+    color: rgb(197, 0, 92);
+    font-size: 30px;
     padding-top: 20px;
     padding-left: 20px;
     margin: 0;

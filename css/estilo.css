@@ -112,7 +112,6 @@ h1{
     display : flex ;
     justify-content: space-between;
     height: 150px;
-    display: flex;
     align-items: center;
 }
 
@@ -325,7 +324,9 @@ h1 strong{
 
 .container{
 /*     border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
+/*     width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -348,4 +349,47 @@ h1 strong{
     margin-top: -10px;
     padding-left: 170px;
     background-color: #c1c1c1;
+}
+
+/* FIRST DESKTOP */
+
+@media screen and (max-width:1024px){
+    body{
+
+    }
+}
+
+@media screen and (max-width:767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ol{
+        display: block;
+    }
+
+    .header ol li{
+        height: 30px;
+    }
+
+    .link{
+        justify-content: center;
+    }
+
+    .header figure{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px){
+    body{
+
+    }
+}
+
+@media screen and (max-width:320px){
+    body{
+
+    }
 }

@@ -64,6 +64,7 @@ h1{
 
 .project-details{
     width: 50%;
+    margin: 0 20px;
 }
 
 .project-imageContainer{
@@ -356,9 +357,7 @@ h1 strong{
 /* FIRST DESKTOP */
 
 @media screen and (max-width:1024px){
-    body{
-
-    }
+    
 }
 
 @media screen and (max-width:767px){
@@ -398,39 +397,75 @@ h1 strong{
 
     .project-details{
         width: auto;
+        margin: 0px 20px;
     }
 
     .project-title{
         font-size: 1.1em;
+        margin: 0.5em 0px;
     }
 
     .project-course{
         font-size: .6em;
+        margin: 1em 0px;
     }
 
     .project-date{
         font-size: .8em;
+        margin: .8em 0;
     }
 
     .project-url{
         font-size: .8em;
+        margin: .7em 0;
     }
 
     .project-description{
         font-size: .9em;
+        margin: .8em 0;
+    }
+
+    .portfolio-title{
+        font-size: 30px; 
     }
 
 }
 
 
 @media screen and (max-width:480px){
-    body{
-
+    .portfolio-title{
+        font-size: 25px;
+        margin-bottom: 30px; 
     }
+
+    .project-title{
+        font-size: 1.1em;
+        margin: 0.4em 0px;
+    }
+
+    .project-course{
+        font-size: .6em;
+        margin: .7em 0px;
+    }
+
+    .project-date{
+        font-size: .8em;
+        margin: .6em 0;
+    }
+
+    .project-url{
+        font-size: .8em;
+        margin: .6em 0;
+    }
+
+    .project-description{
+        font-size: .9em;
+        margin: .6em 0;
+    }
+
+
 }
 
 @media screen and (max-width:320px){
-    body{
 
-    }
 }

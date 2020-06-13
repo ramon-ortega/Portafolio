@@ -63,14 +63,21 @@ h1{
 }
 
 .project-details{
-    width: 500px;
+    width: 50%;
+    margin: 0 20px;
+}
+
+.project-imageContainer{
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .portfolio{
     background: #c1c1c1;
 }
-
-
 
 .project{
 /*     tamaño / tipo / estilo */
@@ -95,10 +102,6 @@ h1{
     background: white;
 /*  box-sizing: border-box Delimita el modelo de caja */
     display: flex;
-}
-
-.project-imageContainer{
-    width: 500px;
 }
 
 .experience-details{
@@ -354,9 +357,7 @@ h1 strong{
 /* FIRST DESKTOP */
 
 @media screen and (max-width:1024px){
-    body{
-
-    }
+    
 }
 
 @media screen and (max-width:767px){
@@ -380,16 +381,91 @@ h1 strong{
     .header figure{
         text-align: center;
     }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project{
+        display: block;
+    }
+ 
+    .portfolio-project{
+        font-size: 16px;
+    }
+
+    .project-details{
+        width: auto;
+        margin: 0px 20px;
+    }
+
+    .project-title{
+        font-size: 1.1em;
+        margin: 0.5em 0px;
+    }
+
+    .project-course{
+        font-size: .6em;
+        margin: 1em 0px;
+    }
+
+    .project-date{
+        font-size: .8em;
+        margin: .8em 0;
+    }
+
+    .project-url{
+        font-size: .8em;
+        margin: .7em 0;
+    }
+
+    .project-description{
+        font-size: .9em;
+        margin: .8em 0;
+    }
+
+    .portfolio-title{
+        font-size: 30px; 
+    }
+
 }
 
-@media screen and (max-width:480px){
-    body{
 
+@media screen and (max-width:480px){
+    .portfolio-title{
+        font-size: 25px;
+        margin-bottom: 30px; 
     }
+
+    .project-title{
+        font-size: 1.1em;
+        margin: 0.4em 0px;
+    }
+
+    .project-course{
+        font-size: .6em;
+        margin: .7em 0px;
+    }
+
+    .project-date{
+        font-size: .8em;
+        margin: .6em 0;
+    }
+
+    .project-url{
+        font-size: .8em;
+        margin: .6em 0;
+    }
+
+    .project-description{
+        font-size: .9em;
+        margin: .6em 0;
+    }
+
+
 }
 
 @media screen and (max-width:320px){
-    body{
 
-    }
 }

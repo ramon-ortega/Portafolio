@@ -63,14 +63,20 @@ h1{
 }
 
 .project-details{
-    width: 500px;
+    width: 50%;
+}
+
+.project-imageContainer{
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .portfolio{
     background: #c1c1c1;
 }
-
-
 
 .project{
 /*     tamaño / tipo / estilo */
@@ -95,10 +101,6 @@ h1{
     background: white;
 /*  box-sizing: border-box Delimita el modelo de caja */
     display: flex;
-}
-
-.project-imageContainer{
-    width: 500px;
 }
 
 .experience-details{
@@ -380,7 +382,46 @@ h1 strong{
     .header figure{
         text-align: center;
     }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project{
+        display: block;
+    }
+ 
+    .portfolio-project{
+        font-size: 16px;
+    }
+
+    .project-details{
+        width: auto;
+    }
+
+    .project-title{
+        font-size: 1.1em;
+    }
+
+    .project-course{
+        font-size: .6em;
+    }
+
+    .project-date{
+        font-size: .8em;
+    }
+
+    .project-url{
+        font-size: .8em;
+    }
+
+    .project-description{
+        font-size: .9em;
+    }
+
 }
+
 
 @media screen and (max-width:480px){
     body{

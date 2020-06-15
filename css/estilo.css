@@ -180,11 +180,11 @@ h1 strong{
 }
 
 .curriculum{
-    margin: 9px;
+    margin: 1% 1%;
     border: 1px solid gray;
     background-color: rgb(137, 167, 212);
     flex-shrink: 0;
-    width: 480px;
+    width: 47%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -194,10 +194,8 @@ h1 strong{
 }
 
 .curriculum-details{
-    margin:20px;
-    width: 380px;
+    margin: -60px 20px 20px 20px;
     padding: 28px;
-    margin-top: -60px;
     border: 1px solid gray;
     border-radius: 5px;
     text-align: center;
@@ -205,7 +203,7 @@ h1 strong{
     position: relative;
 }
 
-.curriculum-image{
+.curriculum img{
     width: 480px;
     height: 350px;
     object-fit: cover;
@@ -350,13 +348,16 @@ h1 strong{
 
 .container-h2{
     margin-top: -10px;
-    padding-left: 170px;
+    padding-left: 20px;
     background-color: #c1c1c1;
 }
 
 /* FIRST DESKTOP */
 
 @media screen and (max-width:1024px){
+    .container{
+        padding: 0 15px;
+    }
     
 }
 
@@ -429,6 +430,15 @@ h1 strong{
         font-size: 30px; 
     }
 
+    .curriculum{
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .curriculum img{
+        width: 100%;
+    }
+
 }
 
 
@@ -463,7 +473,32 @@ h1 strong{
         margin: .6em 0;
     }
 
+    .curriculum-details{
+        padding: 1.4em;
+        margin: -3.5em 1em 1em;
+    }
 
+    .contact{
+        display: block;
+        text-align: center;
+        padding: 1em 0;
+        height: auto;
+    }
+
+    .contact-button{
+        margin: 1em auto;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+        padding-top: 1em;
+    }
+
+    .curso-tomado{
+        padding-bottom: 1em;
+    }
 }
 
 @media screen and (max-width:320px){

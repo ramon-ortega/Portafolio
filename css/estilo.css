@@ -350,6 +350,13 @@ h1 strong{
     margin-top: -10px;
     padding-left: 20px;
     background-color: #c1c1c1;
+    text-align: center;
+}
+
+.html-video{
+    width: 100%;
+    height: auto;
+/*     max-width: 100%; */
 }
 
 /* FIRST DESKTOP */
@@ -358,7 +365,28 @@ h1 strong{
     .container{
         padding: 0 15px;
     }
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .image-hero{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
     
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width:767px){
@@ -443,6 +471,10 @@ h1 strong{
 
 
 @media screen and (max-width:480px){
+    h1{
+        font-size: 1.5em;
+    }
+
     .portfolio-title{
         font-size: 25px;
         margin-bottom: 30px; 
@@ -502,5 +534,11 @@ h1 strong{
 }
 
 @media screen and (max-width:320px){
+    h1{
+        font-size: 1em;
+    }
 
+    .hero{
+        padding: 2em 1em;
+    }
 }

@@ -205,7 +205,7 @@ h1{
 }
 
 h1 strong{
-    color: yellowgreen;
+    color: #9acd32;
 }
 
 .experience{
@@ -397,6 +397,7 @@ h1 strong{
     padding-left: 20px;
     margin: 0;
     height: 50px;
+    text-align: center;
 }
 
 .container-h2{
@@ -432,6 +433,19 @@ h1 strong{
     margin-top: -10px;
 }
 
+.burguer-menu{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    color: white;
+    z-index: 4;
+}
+
 /* FIRST DESKTOP */
 
 @media screen and (max-width:1024px){
@@ -463,6 +477,10 @@ h1 strong{
 }
 
 @media screen and (max-width:767px){
+    .burguer-menu{
+        display: block;
+    }
+
     .header{
         display: block;
         height: auto;
@@ -474,6 +492,34 @@ h1 strong{
 
     .header ol li{
         height: 30px;
+        margin-bottom: 1em;
+    }
+
+    .header a{
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+
+    .menu{
+        background-color: rgba(153, 205, 50, 0.8);
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        /* height: 100vw; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu.is-active{
+        left: 0;
     }
 
     .link{

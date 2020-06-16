@@ -448,7 +448,7 @@ h1 strong{
 
 /* FIRST DESKTOP */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
     .container{
         padding: 0 15px;
     }
@@ -460,7 +460,7 @@ h1 strong{
         padding: 2em;
     }
 
-    .image-hero{
+/*     .image-hero{
         position: absolute;
         z-index: 1;
         top: 0;
@@ -468,7 +468,7 @@ h1 strong{
         bottom: 0;
         left: 0;
         width: 100%;
-    }
+    } */
     
     h1{
         font-size: 2em;
@@ -592,6 +592,22 @@ h1 strong{
 @media screen and (max-width:480px){
     h1{
         font-size: 1.5em;
+    }
+
+    .image-hero{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .social-link{
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 
     .portfolio-title{
